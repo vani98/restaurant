@@ -1,0 +1,30 @@
+.menu-card{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 24rem;
+    width: 38rem;
+    border: 1px solid #EEEEEE;
+    background-color: rgba(15,15,15,75%);
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+}
+.menu-card:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+@media (max-width: 1284px) {
+    .menu-card{
+        height: 20rem;
+        width: 35rem;
+    }
+}  
+@media (max-width: 792px) {
+    .menu-card{
+        height: 17rem;
+        width: 30rem;
+    }
+}  

@@ -1,0 +1,15 @@
+.store-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    border-bottom: 1px solid #151515;
+    border-radius: 1.5rem;
+}
+.store-card p:nth-child(1){
+    color:#825600;
+}
+.store-card p{
+    font-size: 2rem;
+}

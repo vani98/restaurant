@@ -1,0 +1,36 @@
+nav a{
+    color:#EEEEEE;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    transition: all 0.1s ease 0s;
+    /* text-shadow:; */
+}
+nav a:hover{
+    color:#FFC554;
+    transition: all 0.3s ease 0s;
+}
+nav a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    margin: 0 auto;
+    height: 0.2rem;
+    background-color: #EEEEEE;
+    transition: all 0.1s ease 0s;
+}
+nav a:hover::after{
+    width: 100%;
+    background-color: #FFC554;
+    transition: all 0.3s ease 0s;
+}
+ul{
+  display: flex;
+}
+  
+nav li{
+    margin-right: 1rem;
+}
+.activo{
+    color: #FFC554;
+}

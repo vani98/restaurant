@@ -1,0 +1,86 @@
+.about-us{
+    /* padding: 5rem; */
+    color:#151515;
+}
+.about-us-presentation{
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .who-whe-are{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    width: 90%;
+    height: 90%;
+    background-color: #EEEEEE; 
+}
+.about-us .who-whe-are h2{
+    font-weight: 600;
+    font-size: 3rem;
+    padding-bottom:6rem;
+    color: #825600;
+}
+.about-us .who-whe-are .who-we-are-text{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.about-us .who-whe-are p:nth-child(4){
+    margin-top: 4rem;
+    font-size: 5rem;
+    font-family: 'Alex Brush', cursive;
+    color:#825600;
+    text-align: center;
+}
+.about-us .about-us-store{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0;
+}
+.about-us .about-us-store h2{
+    margin: 5rem 0;
+    align-self: center;
+}
+.about-us .stores{
+    margin: 0 8% 6rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 916px) {
+    .about-us .who-whe-are .who-we-are-text{
+        font-size: 2rem;
+    }
+    .about-us .who-whe-are p:nth-child(4){
+        font-size: 3.7rem;
+    }
+}  
+
+@media (max-width: 768px) {
+    .about-us .who-whe-are .who-we-are-text{
+        font-size: 1.5rem;
+    }
+    .about-us .who-whe-are p:nth-child(4){
+        font-size: 3.5rem;
+    }
+} 
+/* @media (max-width: 678px) {
+    3,2,5
+    .about-us .who-whe-are h2{
+        font-size: 2.5rem;    
+    }
+    .about-us .who-whe-are .who-we-are-text{
+        font-size: 1.5rem;
+    }
+    .about-us .who-whe-are p:nth-child(4){
+        font-size: 3.5rem;
+    }
+} */

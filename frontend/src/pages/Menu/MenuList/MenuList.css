@@ -1,0 +1,39 @@
+.menu-cart{
+    text-align: center;
+    margin: auto;
+    color:#151515;
+    text-align: center;
+}
+.menu-cart-details-items{
+    margin: 5rem 0;
+}
+.menu-cart h2{
+    padding-bottom: 20rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 8rem;
+    color:#EEEEEE;
+    height: 94vh;
+}
+.menu-cart-details{
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    color: #151515;
+}
+.menu-cart-details span{
+    color: #825600;
+    text-transform: uppercase;
+}
+
+.menu-cart-items{
+    padding: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}

@@ -1,0 +1,48 @@
+.home-presentation{
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-presentation h1{
+    font-size: 3.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.home-presentation p{
+    padding-bottom: 8rem;
+    font-size: 2.9rem;
+    font-family: 'Alex Brush', cursive;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+.home-recommended-dishes h2, .home-best-deals h2, .home-events h2{
+    padding: 4rem 0;
+    font-size: 3rem;
+    color:#151515;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.home-recommended-dishes-card, .home-best-deals-card{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+.home-event-card{
+    margin-bottom: 8rem;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-overflow-style: none; 
+
+}
+::-webkit-scrollbar{
+    display: none;
+}

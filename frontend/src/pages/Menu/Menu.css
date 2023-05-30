@@ -1,0 +1,13 @@
+.menucards{
+    padding: 6rem 3rem;
+    display: flex;
+    gap:3rem;
+    height: 88vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+.menucards p{
+    color: #EEEEEE;
+}
