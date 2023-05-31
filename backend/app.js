@@ -3,7 +3,21 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
+require('dotenv').config();
 var session = require('express-session');
+
+secured = async(req,res,next)=> {
+  try{
+    if (req.session.id_user){
+      next();
+    } else{
+      res.redirect('/admin/login');
+    }
+  }catch(error){
+    console.log(error);
+  }
+}
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -11,6 +25,7 @@ var menuRouter = require('./routes/menu');
 var nosotrosRouter = require('./routes/nosotros');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/sucursales');
 
 var app = express();
 
@@ -24,22 +39,21 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', indexRouter);
+app.use(session({
+  secret:'9mQXCtfB9HONoN18AsAq53aVObE39KR7',
+  resave: false,
+  saveUninitialized:true
+}));
+
+app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 
-app.get("/", function(req,res){
-  var conocido = Boolean(req.session.nombre)
-  res.render('index',{
-    title: 'Sesiones en Express.js',
-    conocido:conocido,
-    nombre:req.session.nombre
-  });
-})
 
 app.use('/menu', menuRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/contacto', contactoRouter);
 app.use('/admin/login',loginRouter);
+app.use('/admin/sucursales', secured, adminRouter);
 
 
 app.get('/usuarios',function(req,res){

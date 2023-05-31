@@ -1,1 +1,21 @@
-<h1>Página de login</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Administrador</title>
+    <link rel='stylesheet' href='/public/stylesheets/restaurant.css' />
+  </head>
+  <body>
+    <div class="login-container">
+    <form  class="login-container-form" action="/admin/login" method="post">
+        <label for="inputUser">Usuario</label>
+        <input type="text" name="user" id="inputUser">
+        <label for="inputPassword">Contraseña</label>
+        <input type="password" name="password" id="inputPassword">
+        <input type="submit" class="send" value="LOGIN">
+    </form>
+    {{#if error}}
+        <p>Usuario y/o contraseña incorrectos</p>
+    {{/if}}
+</div>
+  </body>
+</html>

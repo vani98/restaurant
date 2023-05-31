@@ -3,6 +3,33 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.login-container-form{
+  display: flex;
+  flex-direction: column;
+}
+.login-container-form input{
+  height: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  width: 20rem;
+  font-size: 1rem;
+  border:none;
+  background-color: #EEEEEE;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1   5);
+}
+.login-container-form input:focus{
+  outline: none;
+}
+.login-container-form .send{
+    margin-top: 1rem;
+    height: 3rem;
+    width:20rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    background-color: #4775ff;
+    color:#EEEEEE; 
+}
+.login-container-form label{
+  font-size: 1rem;
+  
 }

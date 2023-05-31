@@ -1,0 +1,13 @@
+<h1>Agregar una sucursal</h1>
+<form action="/admin/sucursales/agregar" method="post">
+    <label for="inputStore">Nombre</label>
+    <input type="text" id="inputStore" name="name">
+    <label for="inputAddress">Direccion</label>
+    <input type="text" id="inputAddress" name="address">
+    <label for="inputPhone">Telefono</label>
+    <input type="text" id="inputPhone" name="phone">
+    <input type="submit" value="AGREGAR">
+</form>
+{{#if error}}
+<p>{{message}}</p>
+{{/if}}

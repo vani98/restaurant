@@ -1,0 +1,23 @@
+<p>Hola {{user}}</p>
+<a href="/admin/login/logout">Cerrar Sesion</a>
+<h1>Administracion de Sucursales</h1>
+<a href="/admin/sucursales/agregar">Nuevo</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Direccion</th>
+      <th>Telefono</th>
+    </tr>
+  </thead>
+  <tbody>
+        {{#each stores}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{address}}</td>
+                <td>{{phone}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
